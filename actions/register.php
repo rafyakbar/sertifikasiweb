@@ -21,9 +21,12 @@ if (isset($_POST)){
                 $request->password,
                 'Pembeli'
             );
-        }
 
-        $_SESSION['user'] = $request->email;
+            $_SESSION['user'] = $request->email;
+        }
+        else {
+            $_SESSION['info'] = 'Email telah terdaftar pada akun lain';
+        }
     }
 }
 

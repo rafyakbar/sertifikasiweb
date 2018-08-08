@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e23b1d60-c723-4ee7-899a-0b552d807e82" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Middleware/RedirectIfNotAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/ifnotadmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/KeranjangController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/KeranjangController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/CheckAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/CheckAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/editbarang.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/editbarang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/hapusbarang.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/hapusbarang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/tambahbarang.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/tambahbarang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/store.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,95 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="editbarang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions/editbarang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hapusbarang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions/hapusbarang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tambahbarang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions/tambahbarang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layouts/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="44" column="128" selection-start-line="44" selection-start-column="128" selection-end-line="44" selection-end-column="128" />
-              <folding>
-                <element signature="e#44#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ifnotadmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/ifnotadmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedirectIfNotAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Middleware/RedirectIfNotAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/AuthController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeranjangController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/KeranjangController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="store.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="176">
+              <caret line="91" column="112" selection-start-line="91" selection-start-column="112" selection-end-line="91" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tambahkeranjang.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/actions/tambahkeranjang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -165,7 +82,6 @@
         <option value="$PROJECT_DIR$/layouts/init.php" />
         <option value="$PROJECT_DIR$/views/register.php" />
         <option value="$PROJECT_DIR$/views/login.php" />
-        <option value="$PROJECT_DIR$/actions/register.php" />
         <option value="$PROJECT_DIR$/actions/login.php" />
         <option value="$PROJECT_DIR$/actions/ceksession.php" />
         <option value="$PROJECT_DIR$/data.json" />
@@ -175,7 +91,6 @@
         <option value="$PROJECT_DIR$/views/info.php" />
         <option value="$PROJECT_DIR$/support/init.php" />
         <option value="$PROJECT_DIR$/support/kernel.php" />
-        <option value="$PROJECT_DIR$/views/checkout.php" />
         <option value="$PROJECT_DIR$/actions/hapuskeranjang.php" />
         <option value="$PROJECT_DIR$/actions/logout.php" />
         <option value="$PROJECT_DIR$/actions/tambahkeranjang.php" />
@@ -190,8 +105,10 @@
         <option value="$PROJECT_DIR$/actions/tambahbarang.php" />
         <option value="$PROJECT_DIR$/Middleware/RedirectIfNotPembeli.php" />
         <option value="$PROJECT_DIR$/Controllers/AuthController.php" />
-        <option value="$PROJECT_DIR$/views/store.php" />
         <option value="$PROJECT_DIR$/Controllers/KeranjangController.php" />
+        <option value="$PROJECT_DIR$/views/checkout.php" />
+        <option value="$PROJECT_DIR$/actions/register.php" />
+        <option value="$PROJECT_DIR$/views/store.php" />
       </list>
     </option>
   </component>
@@ -266,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/layouts/header.php&#10;hea&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/layouts/header.php&#10;Bara&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/Models/Barang.php&#10;st&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/store.php&#10;ini&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/support/init.php&#10;home&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/home.php&#10;User&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/Models/User.php&#10;store&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/store.php&#10;inde&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/index.php" />
+    <property name="SearchEverywhereHistoryKey" value="stor&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/store.php&#10;head&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/layouts/header.php&#10;hea&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/layouts/header.php&#10;Bara&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/Models/Barang.php&#10;st&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/store.php&#10;ini&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/support/init.php&#10;home&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/home.php&#10;User&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/Models/User.php&#10;store&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/views/store.php&#10;inde&#9;FILE&#9;file://D:/htdocs/sertifikasiweb/index.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -307,12 +224,12 @@
       <updated>1533643389235</updated>
       <workItem from="1533643390734" duration="16548000" />
       <workItem from="1533682757496" duration="1363000" />
-      <workItem from="1533697294244" duration="27845000" />
+      <workItem from="1533697294244" duration="28534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45756000" />
+    <option name="totallyTimeSpent" value="46445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -448,20 +365,6 @@
     <entry file="file://$PROJECT_DIR$/storage/M.692000.020.02_DSC_9003.JPG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/actions/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/BarangController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -539,21 +442,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/actions/hapuskeranjang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/tambahkeranjang.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
@@ -643,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Middleware/RedirectIfNotAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/actions/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -664,17 +546,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/store.php">
+    <entry file="file://$PROJECT_DIR$/Middleware/RedirectIfNotAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/KeranjangController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="126">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="91" column="112" selection-start-line="91" selection-start-column="112" selection-end-line="91" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/tambahkeranjang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>

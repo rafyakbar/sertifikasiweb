@@ -89,7 +89,7 @@ use Models\Barang;
                                                     <div class="form-group">
                                                         <label>Jumlah Barang</label>
                                                         <input class="form-control" type="number"
-                                                               max="<?= $barang->stok ?>" name="jumlah">
+                                                               max="<?= $barang->stok ?>" name="jumlah" required>
                                                     </div>
                                                     <button class="btn btn-primary">Tambah Keranjang</button>
                                                 </form>
