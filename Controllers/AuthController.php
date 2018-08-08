@@ -29,7 +29,7 @@ class AuthController
     public static function redirectTo()
     {
         if (self::cek()){
-            $user = User::find($_SESSION['user']);
+            $user = \user();
 
             if ($user->role == 'Admin')
                 header('Location: ../views/home.php');
@@ -45,6 +45,7 @@ class AuthController
      */
     public static function logout()
     {
+        writeLog(\user()->email.'_Melakukan logout pada '.getDateTime());
         session_destroy();
     }
 }

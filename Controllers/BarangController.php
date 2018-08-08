@@ -22,6 +22,7 @@ class BarangController
     {
         if (!Barang::has($request->kode)){
             uploadGambar($file, $request->kode);
+
             Barang::create(
                 $request->kode,
                 $request->nama,
@@ -29,6 +30,8 @@ class BarangController
                 $request->stok,
                 $request->kategori
             );
+
+            writeLog(user()->email.'_Menambah barang pada '.getDateTime());
         }
         else
             $_SESSION['info'] = 'Barang dengan kode '.$request->kode.' telah ada';
@@ -59,6 +62,8 @@ class BarangController
             );
 
             $_SESSION['info'] = 'Barang berhasil diperbarui';
+
+            writeLog(user()->email.'_Mengedit barang pada '.getDateTime());
         }
 
         header('Location: ../views/home.php');
@@ -74,6 +79,8 @@ class BarangController
         Barang::find($request->kode)->delete();
 
         $_SESSION['info'] = 'Berhasil menghapus barang';
+
+        writeLog(user()->email.'_Menghapus barang pada '.getDateTime());
 
         header('Location: ../views/home.php');
     }

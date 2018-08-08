@@ -23,6 +23,8 @@ class KeranjangController
             $_SESSION['keranjang'][$request->kode] = $request->jumlah + $_SESSION['keranjang'][$request->kode];
         else
             $_SESSION['keranjang'][$request->kode] = $request->jumlah;
+
+        writeLog(user()->email.'_Menambahkan '.$request->kode.' kedalam keranjang pada '.getDateTime());
     }
 
     /**
@@ -49,5 +51,7 @@ class KeranjangController
     {
         if (isset($_SESSION['keranjang'][$kode]))
             unset($_SESSION['keranjang'][$kode]);
+
+        writeLog(user()->email.'_Menghapus barang yang di keranjang pada '.getDateTime());
     }
 }

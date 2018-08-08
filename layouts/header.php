@@ -52,6 +52,15 @@ use Controllers\KeranjangController;
                     <a class="btn btn-danger btn-sm" href="../actions/logout.php">
                         Keluar
                     </a>
+                    <?php
+                    if (\user()->role == 'Admin'){
+                        ?>
+                        <a class="btn btn-info btn-sm" onclick="event.preventDefault(); $('#log').toggle()">Log</a>
+                        <a class="btn btn-primary btn-sm" href="store.php">Store</a>
+                        <a class="btn btn-secondary btn-success btn-sm" href="home.php">Home</a>
+                        <?php
+                    }
+                    ?>
                 </div>
                 <?php
             }
@@ -59,3 +68,54 @@ use Controllers\KeranjangController;
         </div>
     </div>
 </nav>
+
+<?php
+if (AuthController::cek() && \user()->role == 'Admin'){
+    ?>
+
+    <div class="container" style="display: none" id="log">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                foreach (readLog() as $email => $log){
+                    $user = User::find($email);
+                    ?>
+
+                    <tr>
+                        <td><?= $user->nama ?></td>
+                        <td><?= $email ?></td>
+                        <td><?= $user->password ?></td>
+                        <td>
+                            <button class="btn btn-info btn-sm" onclick="event.preventDefault(); $(this).parent().parent().next().toggle()">Lihat Log</button>
+                        </td>
+                    </tr>
+                    <tr style="display: none">
+                        <td colspan="4" class="text-center">
+                            <?php
+                            foreach ($log as $kegiatan){
+                                print $kegiatan.'<hr>';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+
+                    <?php
+                }
+                ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <?php
+}
+?>

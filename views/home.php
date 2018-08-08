@@ -29,7 +29,7 @@ include '../support/ifnotadmin.php';
                                     <th>Harga</th>
                                     <th>Stok</th>
                                     <th>Kategori</th>
-                                    <th>Aksi</th>
+                                    <th width="15%">Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -48,9 +48,9 @@ include '../support/ifnotadmin.php';
                                             <td><?= $barang->kategori ?></td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a class="btn btn-warning btn-sm"
+                                                    <a class="btn btn-warning btn-xs"
                                                        href="edit.php?kode=<?php print $barang->kode ?>">Edit</a>
-                                                    <a class="btn btn-danger btn-sm"
+                                                    <a class="btn btn-danger btn-xs"
                                                        onclick="hapus('<?php print $barang->kode ?>')">Hapus</a>
                                                 </div>
                                             </td>

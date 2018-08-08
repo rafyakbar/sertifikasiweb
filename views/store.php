@@ -19,6 +19,9 @@ use Models\Barang;
                 Keranjang anda
             </div>
             <div class="panel-body">
+                <div class="alert alert-info">
+                    Klik barang pada keranjang anda untuk menghapus barang yang ada di keranjang
+                </div>
                 <?php
                 if (!isset($_SESSION['keranjang']))
                     $_SESSION['keranjang'][''] = 0;

@@ -16,9 +16,10 @@ if (isset($_POST)){
     if (!empty($request->email) && !empty($request->password)){
         $user = User::find($request->email);
 
-        if ($user->password == $request->password)
+        if ($user->password == $request->password){
             $_SESSION['user'] = $request->email;
-        else
+            writeLog($user->email.'_Melakukan login pada '.getDateTime());
+        } else
             $_SESSION['info'] = 'Kata sandi atau email salah';
     }
 }
