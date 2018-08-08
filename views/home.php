@@ -8,6 +8,7 @@
 
 include '../layouts/header.php';
 include '../support/kernel.php';
+include '../support/ifnotadmin.php';
 
 ?>
 

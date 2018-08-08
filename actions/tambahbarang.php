@@ -9,6 +9,7 @@
 require_once '../support/init.php';
 
 include '../support/kernel.php';
+include '../support/ifnotadmin.php';
 
 use Controllers\BarangController;
 

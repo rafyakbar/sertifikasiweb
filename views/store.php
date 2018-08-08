@@ -20,19 +20,20 @@ use Models\Barang;
             </div>
             <div class="panel-body">
                 <?php
-                if (!isset($_SESSION['keranjang'])) {
-                    $_SESSION['keranjang'];
-                }
+                if (!isset($_SESSION['keranjang']))
+                    $_SESSION['keranjang'][''] = 0;
 
                 $tagihan = 0;
                 foreach ($_SESSION['keranjang'] as $kode => $jumlah) {
-                    $barang = Barang::find($kode);
-                    ?>
-                    <a href="../actions/hapuskeranjang.php?kode=<?= $kode ?>" type="button" class="btn btn-warning">
-                        <?= $kode ?> (<?= $barang->nama ?>) <span class="badge badge-light"><?= $jumlah ?></span>
-                    </a>
-                    <?php
-                    $tagihan += ($barang->harga * $jumlah);
+                    if ($kode != ''){
+                        $barang = Barang::find($kode);
+                        ?>
+                        <a href="../actions/hapuskeranjang.php?kode=<?= $kode ?>" type="button" class="btn btn-warning">
+                            <?= $kode ?> (<?= $barang->nama ?>) <span class="badge badge-light"><?= $jumlah ?></span>
+                        </a>
+                        <?php
+                        $tagihan += ($barang->harga * $jumlah);
+                    }
                 }
                 ?>
 

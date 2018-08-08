@@ -31,26 +31,27 @@ use Models\Barang;
                         </thead>
                         <tbody>
                         <?php
-                        if (!isset($_SESSION['keranjang'])) {
-                            $_SESSION['keranjang'];
-                        }
+                        if (!isset($_SESSION['keranjang']))
+                            $_SESSION['keranjang'][''] = 0;
 
                         $tagihan = 0;
                         foreach ($_SESSION['keranjang'] as $kode => $jumlah) {
-                            $barang = Barang::find($kode);
-                            ?>
+                            if ($kode != ''){
+                                $barang = Barang::find($kode);
+                                ?>
 
-                            <tr>
-                                <td><?= $barang->kode ?></td>
-                                <td><?= $barang->nama ?></td>
-                                <td><img src="<?= getGambar($barang->kode) ?>" class="img-responsive"></td>
-                                <td><?= $barang->kategori ?></td>
-                                <td><?= $jumlah ?></td>
-                                <td>Rp <?= rupiah($barang->harga) ?></td>
-                            </tr>
+                                <tr>
+                                    <td><?= $barang->kode ?></td>
+                                    <td><?= $barang->nama ?></td>
+                                    <td><img src="<?= getGambar($barang->kode) ?>" class="img-responsive"></td>
+                                    <td><?= $barang->kategori ?></td>
+                                    <td><?= $jumlah ?></td>
+                                    <td>Rp <?= rupiah($barang->harga) ?></td>
+                                </tr>
 
-                            <?php
-                            $tagihan += ($barang->harga * $jumlah);
+                                <?php
+                                $tagihan += ($barang->harga * $jumlah);
+                            }
                         }
                         ?>
                         <tr>

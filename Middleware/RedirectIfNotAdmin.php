@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: rafya
  * Date: 08/08/2018
- * Time: 19:53
+ * Time: 20:39
  */
 
 namespace Middleware;
@@ -11,11 +11,11 @@ namespace Middleware;
 use Controllers\AuthController;
 use Models\User;
 
-class CheckAuth
+class RedirectIfNotAdmin
 {
     public function __construct()
     {
-        if (!AuthController::cek())
+        if (AuthController::cek() && User::find($_SESSION['user'])->role != 'Admin')
             header('Location: ../actions/ceksession.php');
     }
 }

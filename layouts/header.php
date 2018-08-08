@@ -42,7 +42,7 @@ use Controllers\KeranjangController;
                 SmadShop
                 <?php
                 if (AuthController::cek())
-                    print '(' . User::find($_SESSION['user'])->nama . ')'
+                    print '(' . User::find($_SESSION['user'])->nama . ' sebagai <b>'. User::find($_SESSION['user'])->role .'</b>)';
                 ?>
             </a>
             <?php
