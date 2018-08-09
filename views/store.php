@@ -38,12 +38,18 @@ use Models\Barang;
                         $tagihan += ($barang->harga * $jumlah);
                     }
                 }
+
+                if ($tagihan != 0){
+                    ?>
+
+                    <br><br>
+
+                    Tagihan yang harus dibayar : <b>Rp <?= rupiah($tagihan) ?></b>
+                    <a class="btn btn-primary" href="checkout.php">Checkout</a>
+
+                    <?php
+                }
                 ?>
-
-                <br><br>
-
-                Tagihan yang harus dibayar : <b>Rp <?= rupiah($tagihan) ?></b>
-                <a class="btn btn-primary" href="checkout.php">Checkout</a>
             </div>
         </div>
         <div class="row">
@@ -52,7 +58,7 @@ use Models\Barang;
                     <?php
                     foreach (\Models\Barang::getKategori() as $kategori) {
                         ?>
-                        <a href="store.php?kategori=<?= $kategori ?>" class="list-group-item list-group-item-action">
+                        <a href="store.php?kategori=<?= $kategori ?>" class="list-group-item list-group-item-action <?= (isset($_GET['kategori']) ? (($_GET['kategori'] == $kategori) ? 'active' : '') : '') ?>">
                             Kategori <?= $kategori ?>
                         </a>
                         <?php
@@ -72,6 +78,7 @@ use Models\Barang;
                         <div class="panel-body">
                             <?php
                             foreach ($daftarBarang as $barang) {
+                                $stok = ($barang->stok - (isset($_SESSION['keranjang'][$barang->kode]) ? $_SESSION['keranjang'][$barang->kode] : 0));
                                 ?>
 
                                 <div class="panel panel-default">
@@ -84,7 +91,7 @@ use Models\Barang;
                                                 <p>Kode : <?= $barang->kode ?></p>
                                                 <p>Nama : <?= $barang->nama ?></p>
                                                 <p>Harga : <?= rupiah($barang->harga) ?></p>
-                                                <p>Stok : <?= $barang->stok ?></p>
+                                                <p>Stok : <?= (($stok == 0) ? '<span class="badge">Habis</span>' : $stok) ?></p>
                                             </div>
                                             <div class="col-md-5">
                                                 <form action="../actions/tambahkeranjang.php" method="post">
@@ -94,7 +101,7 @@ use Models\Barang;
                                                         <input class="form-control" type="number"
                                                                max="<?= $barang->stok ?>" name="jumlah" required>
                                                     </div>
-                                                    <button class="btn btn-primary">Tambah Keranjang</button>
+                                                    <button class="btn btn-primary" <?= (($stok == 0) ? 'disabled' : '') ?>>Tambah Keranjang</button>
                                                 </form>
                                             </div>
                                         </div>
