@@ -2,20 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: rafya
- * Date: 08/08/2018
- * Time: 20:39
+ * Date: 09/08/2018
+ * Time: 10:42
  */
 
 namespace Middleware;
 
 use Controllers\AuthController;
-use Models\User;
 
-class RedirectIfNotAdmin
+class RedirectIfAuthenticated
 {
     public function __construct()
     {
-        if (AuthController::cek() && User::find($_SESSION['user'])->role != 'Admin')
+        if (AuthController::cek())
             print "<script>window.location = '../actions/ceksession.php'</script>";
     }
 }

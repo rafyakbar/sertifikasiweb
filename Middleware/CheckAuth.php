@@ -16,6 +16,6 @@ class CheckAuth
     public function __construct()
     {
         if (!AuthController::cek())
-            header('Location: ../actions/ceksession.php');
+            print "<script>window.location = '../actions/ceksession.php'</script>";
     }
 }

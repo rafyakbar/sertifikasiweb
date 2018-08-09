@@ -7,6 +7,7 @@
  */
 
 include '../layouts/header.php';
+include '../support/ifauthenticated.php';
 
 ?>
 
